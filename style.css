@@ -1,0 +1,275 @@
+body{
+
+    background: rgb(85, 197, 231);
+    color: white;
+}
+
+h1{
+
+    text-align: center;
+}
+
+div#calculadora_base{
+
+    background-color: #113C3D;
+    position: absolute;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    margin-left: 420px;
+}
+
+div#resultado{
+
+    background: green;
+    width: 440px;
+    height: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 450px;
+}
+
+div.fileira_1{
+
+    /* background-color: blue; */
+    margin-left: 480px;
+}
+
+div.fileira_2{
+
+    /* background-color: yellow; */
+    margin-left: 480px;
+}
+
+div.fileira_3{
+
+    /* background-color: purple; */
+    margin-left: 480px;
+}
+
+div.fileira_4{
+
+    /* background-color: blue; */
+    margin-left: 480px;
+}
+
+div.fileira_5{
+
+    /* background-color: gray; */
+    margin-left: 480px;
+}
+
+div#bt_1{
+
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px; 
+}
+
+div#bt_2{
+
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_3{
+
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_4{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_5{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_6{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_7{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_8{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_9{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_0{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+div#bt_ponto{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_soma{
+
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_sub{
+
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_mult{
+
+    background-color: brown;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_div{
+
+    background-color: purple;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_igual{
+
+    background-color: green;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#bt_reset{
+
+    background-color: brown;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+div#bt_sinal{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+div#bt_porcentagem{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+
+
+}

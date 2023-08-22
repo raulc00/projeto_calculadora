@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <div id="calculadora_base"></div>
+
+    
+
+    <div id="resultado">Resultado</div>
+
+    <p id="num_atual">Número atual:</p>
+
+    <div class="fileira_1">
+
+        <div id="bt_reset" onclick="reset()">C</div>
+        <div id="bt_sinal" onclick="sinal()">+/-</div>
+        <div id="bt_porcentagem" onclick="porcentagem()">%</div>
+        <div id="bt_div" onclick="divisao()">/</div>
+
+    </div>
+
+    <div class="fileira_2">
+
+        <div id="bt_7" onmousedown="clicar_7()" onmouseup="desclicar('bt_7')">7</div>
+        <div id="bt_8" onmousedown="clicar_8()" onmouseup="desclicar('bt_8')">8</div>
+        <div id="bt_9" onmousedown="clicar_9()" onmouseup="desclicar('bt_9')">9</div>
+        <div id="bt_mult" onclick="multiplicacao()">*</div>
+
+    </div>
+
+    <div class="fileira_3">
+
+        <div id="bt_4" onmousedown="clicar_4()" onmouseup="desclicar('bt_4')">4</div>
+        <div id="bt_5" onmousedown="clicar_5()" onmouseup="desclicar('bt_5')">5</div>
+        <div id="bt_6" onmousedown="clicar_6()" onmouseup="desclicar('bt_6')">6</div>
+        <div id="bt_sub" onclick="subtracao()">-</div>
+
+    </div>
+
+    <div class="fileira_4">
+
+        <div id="bt_1" onmousedown="clicar_1()" onmouseup="desclicar('bt_1')">1</div>
+        <div id="bt_2" onmousedown="clicar_2()" onmouseup="desclicar('bt_2')">2</div>
+        <div id="bt_3" onmousedown="clicar_3()" onmouseup="desclicar('bt_3')">3</div>
+        <div id="bt_soma" onclick="soma()">+</div>
+
+    </div>
+
+    <div class="fileira_5">
+
+        <div id="bt_0" onmousedown="clicar_0()" onmouseup="desclicar('bt_0')">0</div>
+        <div id="bt_ponto" onmousedown="clicar_ponto()">.</div>
+        <div id="bt_igual" onclick="igual()">=</div>
+    </div>
+
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
