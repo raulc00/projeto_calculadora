@@ -8,7 +8,7 @@ function atualiza_num(valor){
 
     num_aux = num_aux + valor
 
-    window.document.getElementById('num_atual').innerHTML = `Número atual: ${num_aux}`
+    window.document.getElementById('resultado').innerHTML = `${num_aux}`
 
 }
 
@@ -16,7 +16,21 @@ function desclicar(bt_id){
 
     window.document.getElementById(bt_id).style.background = 'black'
 
+}
 
+function desclicar_reset(){
+
+    window.document.getElementById('bt_reset').style.background = 'red'
+}
+
+function desclicar_igual(){
+
+    window.document.getElementById('bt_igual').style.background = 'green'
+}
+
+function desclicar_operacoes(bt_id){
+
+    window.document.getElementById(bt_id).style.background = '#2E2F33'
 }
 
 function clicar_1(){
@@ -140,6 +154,9 @@ function soma(){
 
     flag = '1'
 
+    window.document.getElementById('bt_soma').style.background = '#28302A'
+    
+    
 }
 
 function subtracao(){
@@ -170,6 +187,8 @@ function subtracao(){
     }
 
     flag = '2'
+
+    window.document.getElementById('bt_sub').style.background = '#28302A'
 
 }
 
@@ -202,6 +221,8 @@ function multiplicacao(){
 
     flag = '3'
 
+    window.document.getElementById('bt_mult').style.background = '#28302A'
+
 }
 
 function divisao(){
@@ -232,6 +253,8 @@ function divisao(){
     }
 
     flag = '4'
+
+    window.document.getElementById('bt_div').style.background = '#28302A'
 }
 
 function reset(){
@@ -242,10 +265,14 @@ function reset(){
     num_aux_def = 0
     flag_sub = 0
 
-    window.document.getElementById('num_atual').innerHTML = 'Número atual:'
+    
+
+    window.document.getElementById('bt_reset').style.background = '#E04A20'
+    //window.document.getElementById('num_atual').innerHTML = 'Número atual:'
     window.document.getElementById('resultado').innerHTML = 'Resultado'
 
-
+    // 
+    // #E0341A
 }
 
 function igual(){
@@ -285,6 +312,8 @@ function igual(){
         window.document.getElementById('resultado').innerHTML = num_def
         
     }
+
+    window.document.getElementById('bt_igual').style.background = '#71F542'
 
 
 
