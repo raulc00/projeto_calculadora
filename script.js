@@ -1,6 +1,10 @@
 var num_aux = 0
+var num_atualizado = 0
 var num_def = 0
+var num_def_def = 0
 var flag = null
+var flag_igual = 0
+var flag_soma = 0
 var flag_sub = 0
 var num_aux_def = 0
 
@@ -8,7 +12,10 @@ function atualiza_num(valor){
 
     num_aux = num_aux + valor
 
-    window.document.getElementById('resultado').innerHTML = `${num_aux}`
+    num_atualizado = num_aux
+
+    window.document.getElementById('resultado').innerHTML = `${num_atualizado}`
+
 
 }
 
@@ -144,13 +151,36 @@ function clicar_0(){
 
 function soma(){
 
-    num_aux_def = Number(num_aux)
+    flag_soma = Number(flag_soma)
 
-    num_def = Number(num_def)
+    if(flag_soma == 0){
 
-    num_def = num_def + num_aux_def
+        num_aux_def = Number(num_atualizado)
+
+        num_def = Number(num_def)
+
+        num_def = num_def + num_aux_def
+
+        flag_soma = flag_soma + 1
+    }
+     else if(flag_soma != 0 && flag_igual == 0){
+
+        num_aux_def = Number(num_atualizado)
+
+        num_def = num_def + num_aux_def
+
+        window.document.getElementById('resultado').innerHTML = num_def
+    }
+    // else if(flag_soma != 0 && flag_igual != 0){
+
+    //     num_aux_def = Number(num_atualizado)
+
+    //     window.document.getElementById('resultado').innerHTML = num_def
+
+    // }
 
     num_aux = 0
+    num_atualizado = 0
 
     flag = '1'
 
@@ -264,8 +294,8 @@ function reset(){
     flag = null
     num_aux_def = 0
     flag_sub = 0
-
-    
+    flag_soma = 0
+    flag_igual = 0
 
     window.document.getElementById('bt_reset').style.background = '#E04A20'
     //window.document.getElementById('num_atual').innerHTML = 'Número atual:'
@@ -279,12 +309,38 @@ function igual(){
 
     if(flag == '1'){
 
-    
-        num_aux_def = Number(num_aux)
+        flag_igual = Number(flag_igual)
 
-        num_def = num_def + num_aux_def
+        if(flag_igual == 0){
 
-        window.document.getElementById('resultado').innerHTML = num_def
+            num_aux_def = Number(num_atualizado)
+
+            num_def = num_def + num_aux_def
+
+            window.document.getElementById('resultado').innerHTML = num_def
+
+        }
+        else if(flag_igual != 0 && flag_soma == 1){
+
+            num_aux_def = Number(num_atualizado)
+
+            num_def = num_def + num_aux_def
+
+            window.document.getElementById('resultado').innerHTML = num_def
+
+        }
+        else if(flag_igual != 0 && flag_soma > 1){
+
+            num_aux_def = Number(num_atualizado)
+
+            num_def = num_def + num_aux_def
+
+            window.document.getElementById('resultado').innerHTML = num_def
+        }
+
+        flag_igual = flag_igual + 1
+
+
 
     }
     else if(flag == '2'){
