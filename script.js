@@ -193,29 +193,51 @@ function subtracao(){
 
     flag_sub = Number(flag_sub)
 
-    num_aux_def = Number(num_aux)
+    if(flag_sub == 0){
 
-    num_def = Number(num_def)
+        num_aux_def = Number(num_atualizado)
 
-    if(num_def == 0 && flag_sub == 0){
+        num_def = Number(num_def)
+
+        if(num_def == 0){
     
-        num_def = num_aux_def
-        num_aux = 0
-        flag_sub = flag_sub + 1
-    }
-    else if(num_def == 0 && flag_sub != 0){
+            num_def = num_aux_def
+            flag_sub = flag_sub + 1
+        }
 
-        num_def = num_def - num_aux_def
-        num_aux = 0
-        flag_sub = flag_sub + 1
-    }    
+
+    }
+    // else if(num_def == 0 && flag_sub != 0){
+
+    //     num_aux_def = Number(num_atualizado)
+
+    //     num_def = num_def - num_aux_def
+    //     flag_sub = flag_sub + 1
+
+    //     window.document.getElementById('resultado').innerHTML = num_def
+
+    // }   
     else if(num_def != 0){
 
+        num_aux_def = Number(num_atualizado)
+
         num_def = num_def - num_aux_def
-        num_aux = 0
         flag_sub = flag_sub + 1
+
+        window.document.getElementById('resultado').innerHTML = num_def
+    }
+    else if(flag_sub != 0 && flag_igual == 0){
+
+        num_aux_def = Number(num_atualizado)
+
+        num_def = num_def - num_aux_def
+
+        window.document.getElementById('resultado').innerHTML = num_def
     }
 
+
+    num_aux = 0
+    num_atualizado = 0
     flag = '2'
 
     window.document.getElementById('bt_sub').style.background = '#28302A'
@@ -345,11 +367,36 @@ function igual(){
     }
     else if(flag == '2'){
 
-        num_aux_def = Number(num_aux)
+        flag_igual = Number(flag_igual)
 
-        num_def = num_def - num_aux_def
+        if(flag_igual == 0){
 
-        window.document.getElementById('resultado').innerHTML = num_def
+            num_aux_def = Number(num_atualizado)
+
+            num_def = num_def - num_aux_def
+
+            window.document.getElementById('resultado').innerHTML = num_def
+        }
+        else if(flag_igual != 0 && flag_sub == 1){
+
+            num_aux_def = Number(num_atualizado)
+
+            num_def = num_def - num_aux_def
+
+            window.document.getElementById('resultado').innerHTML = num_def
+
+        }
+        else if(flag_igual != 0 && flag_sub > 1){
+
+            num_aux_def = Number(num_atualizado)
+
+            num_def = num_def - num_aux_def
+
+            window.document.getElementById('resultado').innerHTML = num_def
+        }
+
+        flag_igual = flag_igual + 1
+
     }
     else if(flag == '3'){
 
